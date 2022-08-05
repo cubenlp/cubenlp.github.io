@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body {
+            background-image: url(back.jpeg);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            height: 70%;
+            align-items:center;
+        }
+
+        #profile{
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: relative;
+            margin-bottom: 40px;
+            border: 1px solid #409eff;
+            box-shadow: 0 0 10px #409eff;
+        }
+
+        .el-button{
+            display: inline-block;
+            line-height: 1;
+            white-space: nowrap;
+            cursor: pointer;
+            background: #fff;
+            border: 1px solid #dcdfe6;
+            color: #606266;
+            -webkit-appearance: none;
+            text-align: center;
+            box-sizing: border-box;
+            outline: 0;
+            margin: 0;
+            transition: .1s;
+            font-weight: 500;
+            padding: 12px 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            width: 480px;
+        }
+        .el-button--success{
+            color: #fff;
+            background-color: #67c23a;
+            border-color: #67c23a;
+        }
+        .el-button--success:hover{
+            background: #85ce61;
+            border-color: #85ce61;
+            color: #fff;
+        }
+        .el-button--primary{
+            color: #fff;
+            background-color: #409eff;
+            border-color: #409eff;
+        }
+        .el-button--primary:hover{
+            background: #66b1ff;
+            border-color: #66b1ff;
+            color: #fff;
+        }
+        a{
+            color: inherit;
+            text-decoration: inherit;
+        }
+        .title{
+            font-size: 30px;
+            color: #eee;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content:center;">
+        <img id="profile" src="soccer.png" alt="">
+    </div>
+    <h3  class="title">Socc-KGQA</h3>
+    <a href = "mailto:cubenlp.ecnu@gmail.com">
+        <div style="display: flex; justify-content:center;">
+            <button type="button" class="el-button el-button--success" style=" margin-bottom: 20px;">
+                <span>Request authentication information</span><br>
+                <span>(send request email to <span style="color: #ebb563;">cubenlp.ecnu@gmail.com</span> )</span>
+            </button>
+        </div>
+    </a>
+    <div style="display: flex; justify-content:center;">
+        
+    </div>
+    <a href = "http://54.254.198.161">
+        <div style="display: flex; justify-content:center;">
+            <button type="button" class="el-button el-button--primary" style=" margin-bottom: 20px;"><span>Visit Socc-KGQA system</span></button>
+        </div>
+    </a>
+    
+</body>
+</html>
