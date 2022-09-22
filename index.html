@@ -46,18 +46,19 @@
             padding: 12px 20px;
             font-size: 14px;
             border-radius: 4px;
-            width: 480px;
+            width: 560px;
         }
         .el-button--success{
             color: #fff;
             background-color: #67c23a;
             border-color: #67c23a;
+            cursor: default;
         }
-        .el-button--success:hover{
+        /* .el-button--success:hover{
             background: #85ce61;
             border-color: #85ce61;
             color: #fff;
-        }
+        } */
         .el-button--primary{
             color: #fff;
             background-color: #409eff;
@@ -68,6 +69,17 @@
             border-color: #66b1ff;
             color: #fff;
         }
+        .el-button--danger {
+            color: #fff;
+            background-color: #f56c6c;
+            border-color: #f56c6c;
+            cursor: text;
+        }
+        /* .el-button--danger:hover {
+            background: #f78989;
+            border-color: #f78989;
+            color: #fff;
+        } */
         a{
             color: inherit;
             text-decoration: inherit;
@@ -86,16 +98,19 @@
         <img id="profile" src="soccer.png" alt="">
     </div>
     <h3  class="title">Socc-KGQA</h3>
-    <a href = "mailto:cubenlp.ecnu@gmail.com">
-        <div style="display: flex; justify-content:center;">
+    <a >
+        <div style="display: flex; justify-content:center;user-select: text;">
             <button type="button" class="el-button el-button--success" style=" margin-bottom: 20px;">
-                <span>Request authentication information</span><br>
-                <span>(Send request email to <span style="color: #ebb563;">cubenlp.ecnu@gmail.com</span> )</span>
+                <span>The system need authentication information</span><br>
+                <span>To facilitate the system evaluation, we provide the following information for login.</span>
             </button>
         </div>
     </a>
     <div style="display: flex; justify-content:center;">
-        
+        <button type="button" class="el-button el-button--danger" style=" margin-bottom: 20px;user-select: none;">
+                <span style="padding-right: 45px;">Username: <span style="font-size: 1.5em;user-select: text;">admin</span></span><br>
+                <span>Password: <span style="font-size: 1.5em;user-select: text;">Football07</span></span>
+        </button>
     </div>
     <a href = "http://54.254.198.161">
         <div style="display: flex; justify-content:center;">
